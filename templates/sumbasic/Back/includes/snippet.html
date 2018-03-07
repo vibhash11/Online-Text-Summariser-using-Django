@@ -1,9 +1,0 @@
-{% block content %}
-<form action="submit" method="post">{% csrf_token %}
-  {{ form.as_table }}
-  <input type="integer" name="length"><br>
-    <input type="text" name="para" maxlength="10000"><br><br>
-  <input type="submit" value="Submit">
-</form>
-<p> Result: {{ output }} </p>
-{% endblock %}
